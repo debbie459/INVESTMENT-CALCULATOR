@@ -1,0 +1,27 @@
+
+<table>
+
+    <tr>
+        <th>Year</th>
+        <th>Investment Value</th>
+        <th>Interest (Year) </th>
+        <th>Total Interest</th>
+        <th>Invested Capital</th>
+    </tr>
+
+  
+  <tr *ngFor="let entry of sortedData" class="data-row">
+    <td>{{entry.key}}</td>
+    <td>{{entry.value[4] | currenecyValue}}</td>
+    <td>{{entry.value[3] | currenecyValue}}</td>
+    <td>{{entry.value[2] | currenecyValue}}</td>
+    <td>{{entry.value[1] | currenecyValue}}</td>
+  </tr>
+
+
+    
+    
+</table> 
+
+
+  

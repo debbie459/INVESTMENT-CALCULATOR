@@ -1,0 +1,25 @@
+<div class="form-class">
+    <form>
+        <div class="input-div">     
+            <label>INITIAL INVESTMENT</label>
+            <input type="number" name="initialInvestment" [(ngModel)]="initialInvestment" />
+        </div>
+        <div class="input-div">     
+            <label>ANNUAL INVESTMENT</label>
+            <input type="number" name="annualInvestment" [(ngModel)]="annualInvestment" />
+        </div>
+        <div class="input-div">     
+            <label>EXPECTED RETURN</label>
+            <input type="number" name="returnOnInvestment" [(ngModel)]="returnOnInvestment" />
+        </div>
+        <div class="input-div">     
+            <label>DURATION (months)</label>
+            <input type="number" name="durationOfInvestment" [(ngModel)]="durationOfInvestment" />
+        </div>
+
+        <button (click)="calculateInvestment()" type="button" (valuesExist)=true>CALCULATE</button>
+    </form>
+
+    
+    <span>Please enter some values and press calculate</span>
+</div>
